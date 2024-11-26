@@ -27,6 +27,8 @@ Yacc processes the tokens produced by Lex and generates the corresponding HTML o
 3. **Anchor Tags**: Converts anchor links (formatted as `[text](link)`) into HTML `<a>` tags.
 4. **Embedded CSS**: Allows users to embed custom CSS within `<style>` tags.
 
+### To checkout the structure of css in Markdown visit: 'https://www.w3schools.io/file/markdown-css/'
+
 ### Example of Markdown to HTML Conversion
 
 **Input Markdown:**
@@ -56,6 +58,7 @@ Some paragraph text.
 <style>
 . cl1 { color:blue; }
 #id1 { colore:red; }
+</style>
 <h1 class= "cl1"> Heading 1 </h1>
 <p> Some paragraph text. </p>
 <b> Bold text </b>
