@@ -38,8 +38,8 @@ int yylex(void);
                                                                                                                                                          
 program: statements {                                                                                                                                    
                                                                                                                                                          
-    printf("%s", $1);                                                                                                                                    
-                                                                                                                                                         
+    printf("<!DOCTYPE html>\n<html lang=en>\n<head>\n<meta charset=UTF-8>\n<meta name=viewport content=width=device-width, initial-scale=1.0>\n<title>Doc
+ument</title>\n</head>\n<body>%s</body>\n</html>", $1);                                                                                                  
 }                                                                                                                                                        
                                                                                                                                                          
 statements: statement EL statements {                                                                                                                    
@@ -270,7 +270,7 @@ list: DASH ID list {
                                                                                                                                                          
           $$ = (char *) malloc(strlen("<ul><li>") + strlen($2) + strlen("</li></ul>") + strlen($3) + 10);                                                
                                                                                                                                                          
-          sprintf($$, "<ul><li>%s</li>%s</ul>", $2, $3);
+          sprintf($$, "<ul><li>%s</li>%s</ul>", $2, $3);                                                                                                 
                                                                                                                                                          
           free($2); free($3);                                                                                                                            
                                                                                                                                                          
@@ -336,4 +336,4 @@ int main() {
                                                                                                                                                          
     return yyparse();                                                                                                                                    
                                                                                                                                                          
-}                 
+}  
