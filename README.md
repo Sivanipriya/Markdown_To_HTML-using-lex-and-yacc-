@@ -11,6 +11,7 @@ The project is implemented in **C**, and it utilizes **Lex** for lexical analysi
   - Bold text (`**bold**`)
   - Anchor links (`[text](link)`)
   - Images (`![alt](url)`)
+  - Lists ( -First -Second )
   - Paragraphs (`Some text` in a new line)
 - **Inline CSS Styling**: Supports the embedding of CSS styles within the HTML output.
 - **Memory Management**: Uses dynamic memory allocation to build the HTML content on-the-fly.
@@ -38,6 +39,7 @@ Some paragraph text.
 **Bold text**
 [Link](http://example.com) { #id1 }
 ![Image](http://example.com/image.png)
+-First -Second
 
 <style>
 . cl1 { color: blue; }
@@ -63,6 +65,7 @@ Some paragraph text.
 <p> Some paragraph text. </p>
 <b> Bold text </b>
 <a href="http://example.com" id="id1" >Link</a>
-<img src="http://example.com/image/png" alt="Image" /> 
+<img src="http://example.com/image/png" alt="Image" />
+<ul><li>First</li><li>Second</li></ul>
 </body>                                                                                                                                                  
 </html>
