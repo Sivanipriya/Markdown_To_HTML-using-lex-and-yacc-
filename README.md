@@ -56,10 +56,10 @@ Some paragraph text.
 <style>
 . cl1 { color:blue; }
 #id1 { colore:red; }
-<h1 class= cl1> Heading 1 </h1>
+<h1 class= "cl1"> Heading 1 </h1>
 <p> Some paragraph text. </p>
 <b> Bold text </b>
-<a href="http://example.com" id="#id1" >Link</a>
+<a href="http://example.com" id="id1" >Link</a>
 <img src="http://example.com/image/png" alt="Image" /> 
 </body>                                                                                                                                                  
 </html>
