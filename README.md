@@ -39,11 +39,12 @@ Some paragraph text.
 
 <style>
 . cl1 { color: blue; }
-#id1 { color:red; }
+# id1 { color:red; }
 </style>
 
-
+```
 **Output:**
+```markdown
 <!DOCTYPE html>                                                                                                                                          
 <html lang=en>                                                                                                                                           
 <head>                                                                                                                                                   
