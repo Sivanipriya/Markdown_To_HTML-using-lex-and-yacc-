@@ -31,13 +31,34 @@ Yacc processes the tokens produced by Lex and generates the corresponding HTML o
 
 **Input Markdown:**
 ```markdown
-# Heading 1 { . class }
+# Heading 1 { . cl1 }
 Some paragraph text.
 **Bold text**
-[Link](http://example.com) { # id }
+[Link](http://example.com) { #id1 }
 ![Image](http://example.com/image.png)
 
 <style>
-.class { color: blue; }
-# id { color:red; }
+. cl1 { color: blue; }
+#id1 { color:red; }
 </style>
+
+
+**Output:**
+<!DOCTYPE html>                                                                                                                                          
+<html lang=en>                                                                                                                                           
+<head>                                                                                                                                                   
+<meta charset=UTF-8>                                                                                                                                     
+<meta name=viewport content=width=device-width, initial-scale=1.0>                                                                                       
+<title>Document</title>                                                                                                                                  
+</head>                                                                                                                                
+<body>
+<style>
+. cl1 { color:blue; }
+#id1 { colore:red; }
+<h1 class= cl1> Heading 1 </h1>
+<p> Some paragraph text. </p>
+<b> Bold text </b>
+<a href="http://example.com" id="#id1" >Link</a>
+<img src="http://example.com/image/png" alt="Image" /> 
+</body>                                                                                                                                                  
+</html>
